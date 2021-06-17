@@ -1,0 +1,36 @@
+= Asciidoctor YouTube
+
+可自动宽高比
+
+Automatic aspect ratio
+
+== 安装｜Installation
+
+[source, bash]
+gem install asciidoctor-youtube
+
+== 使用｜Usage
+
+=== 语法｜Syntax
+
+[source, asciidoc]
+youtube::xxxx[]
+
+xxxx 是视频 ID
+
+xxxx is the video ID
+
+=== Asciidoctor
+
+[source, bash]
+asciidoctor -r asciidoctor-youtube /path/to/test.adoc
+
+==== Hugo
+
+.config.toml
+[source, toml]
+----
+[markup.asciidocExt]
+extensions = ['asciidoctor-youtube']
+----
+
